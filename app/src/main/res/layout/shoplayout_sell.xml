@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shop_buy"
+    >
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_back"
+
+        android:layout_marginBottom="63dp"
+        android:background="@drawable/back_button"
+        android:layout_marginLeft="119dp"
+        android:layout_marginStart="119dp"
+        android:onClick="buttonOnClickShop"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_sell_selltab"
+
+        android:background="@drawable/sell_button"
+        android:layout_alignTop="@+id/button_back"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="101dp"
+        android:layout_marginEnd="101dp" />
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="220dp"
+        android:id="@+id/imageView_sell_pic"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="80dp"
+        android:layout_marginStart="74dp"
+        android:layout_above="@+id/button_back"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_sell_descr"
+        android:layout_alignTop="@+id/imageView_sell_pic"
+        android:layout_toRightOf="@+id/imageView_sell_pic"
+        android:layout_toEndOf="@+id/imageView_sell_pic"
+        android:layout_alignBottom="@+id/imageView_sell_pic"
+        android:layout_marginLeft="25dp"
+        android:textColor="#fffff9fc" />
+
+    <GridView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridView_sell_grid"
+
+        android:numColumns="8"
+        android:verticalSpacing="10dp"
+        android:layout_alignTop="@+id/textView_sell_descr"
+        android:layout_toRightOf="@+id/textView_sell_descr"
+        android:layout_toEndOf="@+id/textView_buy_descr"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="51dp"
+        android:layout_alignBottom="@+id/textView_sell_descr"
+
+        android:columnWidth="50dp"
+
+        />
+
+    <TextView
+        android:layout_width="425dp"
+        android:layout_height="wrap_content"
+        android:text="Your Gold:"
+        android:id="@+id/textView_sell_gold_text"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/imageView_sell_pic"
+        android:layout_alignStart="@+id/imageView_sell_pic"
+        android:textColor="#fffff9fc"
+        android:layout_toLeftOf="@+id/textView_sell_descr"
+        android:layout_toStartOf="@+id/textView_sell_descr"
+        android:layout_marginTop="25dp" />
+
+</RelativeLayout>

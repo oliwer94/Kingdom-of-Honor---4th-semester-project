@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/scrollinmenu">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_Back_Quest"
+        android:background="@drawable/back_button"
+        android:onClick="buttonOnClickBackToTown"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_history"
+        android:background="@drawable/historybutton"
+        android:onClick="buttonOnClickQuestHistory"
+        android:layout_alignBottom="@+id/button_Back_Quest"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <GridView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        android:layout_above="@+id/button_Back_Quest"
+        android:numColumns="1"
+        android:verticalSpacing="10dp"
+        android:layout_marginRight="480dp"
+        android:layout_marginLeft="110dp"
+        android:smoothScrollbar="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_quest_descr"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="64dp"
+        android:layout_alignBottom="@+id/gridView2"
+        android:layout_alignRight="@+id/button_history"
+        android:layout_alignEnd="@+id/button_history"
+        android:layout_alignLeft="@+id/button_history"
+        android:layout_alignStart="@+id/button_history"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="-120dp"
+        android:layout_marginBottom="120dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_accept"
+        android:layout_above="@+id/button_history"
+
+        android:layout_alignLeft="@+id/textView_quest_descr"
+        android:layout_alignStart="@+id/textView_quest_descr"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/acceptbutton" />
+
+</RelativeLayout>

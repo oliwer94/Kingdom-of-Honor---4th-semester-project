@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    android:background="@drawable/inventorynobuttons">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_inv_back"
+        android:layout_marginBottom="109dp"
+        android:background="@drawable/back_button"
+        android:onClick="buttonOnClickBackToTown"
+        android:layout_marginLeft="128dp"
+        android:layout_marginStart="128dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_x="86dp"
+        android:layout_y="349dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_drop"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/drop_button"
+        android:layout_above="@+id/button_inv_back"
+        android:layout_alignLeft="@+id/button_inv_back"
+        android:layout_alignStart="@+id/button_inv_back"
+        android:layout_alignRight="@+id/button_inv_back"
+        android:layout_alignEnd="@+id/button_inv_back"
+        android:layout_x="86dp"
+        android:layout_y="250dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_equip"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/equip_button"
+        android:layout_above="@+id/button_drop"
+        android:layout_alignLeft="@+id/button_drop"
+        android:layout_alignStart="@+id/button_drop"
+        android:layout_alignRight="@+id/button_drop"
+        android:layout_alignEnd="@+id/button_drop"
+        android:layout_x="86dp"
+        android:layout_y="150dp" />
+
+    <GridView
+        android:layout_width="475dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridView"
+        android:layout_x="435dp"
+        android:layout_y="279dp"
+        android:numColumns="9"
+        android:columnWidth="50dp"
+        android:verticalSpacing="8dp" />
+
+    <ImageView
+        android:layout_width="145dp"
+        android:layout_height="145dp"
+        android:id="@+id/imageView_Inv_Item"
+        android:layout_x="492dp"
+        android:layout_y="88dp" />
+
+    <TextView
+        android:layout_width="162dp"
+        android:layout_height="141dp"
+        android:id="@+id/textView_InvDescr"
+        android:layout_x="740dp"
+        android:layout_y="115dp" />
+
+</AbsoluteLayout>

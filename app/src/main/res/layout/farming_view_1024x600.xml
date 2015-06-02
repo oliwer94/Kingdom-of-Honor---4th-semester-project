@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/farmingview"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player Experience: "
+        android:id="@+id/textView_exp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="47dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="43dp" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar_exp"
+        android:layout_alignTop="@+id/textView_exp"
+        android:layout_toRightOf="@+id/textView_exp"
+        android:layout_marginLeft="61dp"
+        android:layout_marginStart="61dp"
+        android:indeterminate="false"
+        android:layout_marginRight="1000dp"
+        android:maxWidth="200dp" />
+
+
+    <TextView
+        android:background="#00000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0/100"
+        android:id="@+id/textView_pbar"
+        android:gravity="center"
+        android:layout_alignLeft="@id/progressBar_exp"
+        android:layout_alignTop="@id/progressBar_exp"
+        android:layout_alignRight="@id/progressBar_exp"
+        android:layout_alignBottom="@id/progressBar_exp"
+        android:maxWidth="200dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player Level:"
+        android:id="@+id/textView_lvl"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/textView_exp"
+        android:layout_alignLeft="@+id/textView_exp"
+        android:layout_alignStart="@+id/textView_exp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:id="@+id/textView_lvl_value"
+        android:layout_alignBottom="@+id/textView_lvl"
+        android:layout_alignLeft="@+id/progressBar_exp"
+        android:layout_alignStart="@+id/progressBar_exp"
+        android:layout_alignRight="@+id/progressBar_exp"
+        android:layout_alignEnd="@+id/progressBar_exp"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player Gold:"
+        android:id="@+id/textView_stats_gold"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/textView_lvl"
+        android:layout_alignLeft="@+id/textView_lvl"
+        android:layout_alignStart="@+id/textView_lvl" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_gold_value"
+        android:layout_alignBaseline="@+id/textView_stats_gold"
+        android:layout_alignBottom="@+id/textView_stats_gold"
+        android:layout_alignLeft="@+id/textView_lvl_value"
+        android:layout_alignStart="@+id/textView_lvl_value"
+        android:layout_alignRight="@+id/textView_lvl_value"
+        android:layout_alignEnd="@+id/textView_lvl_value" />
+
+    <ImageView
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:id="@+id/imageView_player_img"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/textView_lvl" />
+
+    <ImageView
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:id="@+id/imageView_placeholder"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/textView_gold_value"
+        android:layout_toEndOf="@+id/textView_gold_value"
+        android:layout_marginLeft="196dp"
+        android:layout_marginStart="196dp" />
+
+    <ProgressBar
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar_player_hp"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/imageView_player_img"
+        android:layout_alignLeft="@+id/textView_stats_gold"
+        android:layout_alignStart="@+id/textView_stats_gold"
+        android:indeterminate="false"
+        android:layout_alignRight="@+id/textView_gold_value"
+        android:layout_alignEnd="@+id/textView_gold_value" />
+
+    <TextView
+        android:background="#00000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0/100"
+        android:id="@+id/textView_playerhp"
+        android:gravity="center"
+        android:layout_alignLeft="@id/progressBar_player_hp"
+        android:layout_alignTop="@id/progressBar_player_hp"
+        android:layout_alignRight="@id/progressBar_player_hp"
+        android:layout_alignBottom="@id/progressBar_player_hp"
+        />
+
+    <ProgressBar
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar_mob_hp"
+        android:layout_alignTop="@+id/progressBar_player_hp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="50dp"
+        android:indeterminate="false"
+        android:maxHeight="30dp"
+        android:layout_alignLeft="@+id/imageView_placeholder"
+        android:layout_alignStart="@+id/imageView_placeholder" />
+
+    <TextView
+        android:background="#00000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0/100"
+        android:id="@+id/textView_mobhp"
+        android:gravity="center"
+        android:layout_alignLeft="@id/progressBar_mob_hp"
+        android:layout_alignTop="@id/progressBar_mob_hp"
+        android:layout_alignRight="@id/progressBar_mob_hp"
+        android:layout_above="@+id/textView_player_str"
+        android:layout_marginBottom="0dp"
+        android:paddingBottom="0dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player Strength:"
+        android:id="@+id/textView_player_str"
+        android:layout_marginTop="80dp"
+        android:textColor="#fffff9fc"
+        android:layout_below="@+id/progressBar_player_hp"
+        android:layout_alignLeft="@+id/progressBar_player_hp"
+        android:layout_alignStart="@+id/progressBar_player_hp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_player_str_value"
+        android:layout_alignTop="@+id/textView_player_str"
+        android:layout_alignLeft="@+id/textView_gold_value"
+        android:layout_alignStart="@+id/textView_gold_value"
+        android:textColor="#fffff9fc" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mob Str:"
+        android:id="@+id/textView_mob_name"
+        android:layout_alignBottom="@+id/textView_player_str_value"
+        android:layout_alignLeft="@+id/progressBar_mob_hp"
+        android:layout_alignStart="@+id/progressBar_mob_hp"
+        android:textColor="#fffff9fc" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_mob_str_value"
+        android:layout_alignBottom="@+id/textView_mob_name"
+        android:layout_toRightOf="@+id/textView_mob_name"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_alignRight="@+id/progressBar_mob_hp"
+        android:layout_alignEnd="@+id/progressBar_mob_hp"
+        android:textColor="#fffff9fc" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mob armor:"
+        android:id="@+id/textView_mob_armor"
+        android:layout_below="@+id/textView_mob_name"
+        android:layout_alignLeft="@+id/textView_mob_name"
+        android:layout_alignStart="@+id/textView_mob_name"
+        android:layout_marginTop="19dp"
+        android:textColor="#fffff9fc" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_mob_armor_value"
+        android:layout_alignTop="@+id/textView_mob_armor"
+        android:layout_alignLeft="@+id/textView_mob_str_value"
+        android:layout_alignStart="@+id/textView_mob_str_value"
+        android:layout_alignRight="@+id/textView_mob_str_value"
+        android:layout_alignEnd="@+id/textView_mob_str_value"
+        android:textColor="#fffff9fc" />
+
+    <ImageView
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:id="@+id/imageView_mob_img"
+        android:layout_alignTop="@+id/imageView_placeholder"
+        android:layout_toRightOf="@+id/imageView_placeholder"
+        android:layout_toEndOf="@+id/imageView_placeholder"
+        android:layout_marginLeft="114dp"
+        android:layout_marginStart="114dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_back_to_town"
+        android:onClick="buttonOnClickBackAndRegen"
+        android:background="@drawable/back_button"
+        android:layout_below="@+id/textView_lvl_value"
+        android:layout_alignLeft="@+id/button_Start"
+        android:layout_alignStart="@+id/button_Start"
+        android:layout_alignRight="@+id/button_Start" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_Start"
+        android:onClick="buttonOnClickFarmingStart"
+        android:background="@drawable/start_farming_button"
+        android:layout_above="@+id/textView_lvl_value"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="Start"
+        android:textColor="#00ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player Armor:"
+        android:id="@+id/textView_player_armor"
+        android:textColor="#fffff9fc"
+        android:layout_alignTop="@+id/textView_mob_armor"
+        android:layout_alignLeft="@+id/textView_player_str"
+        android:layout_alignStart="@+id/textView_player_str" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewplayer_armor_value"
+        android:textColor="#fffff9fc"
+        android:layout_alignTop="@+id/textView_player_armor"
+        android:layout_alignLeft="@+id/textView_player_str_value"
+        android:layout_alignStart="@+id/textView_player_str_value" />
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    android:background="@drawable/mainmenu">
+
+    <Button
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:id="@+id/button_Start"
+        android:onClick="buttonOnClickStart"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="190dp"
+        android:layout_marginBottom="105dp" />
+
+    <Button
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:text="Load"
+        android:id="@+id/button_load"
+        android:onClick="buttonOnClickLoad"
+        android:layout_marginTop="46dp"
+        android:layout_alignTop="@+id/button_Start"
+        android:layout_alignLeft="@+id/button_Start"
+        android:layout_alignStart="@+id/button_Start" />
+
+    <Button
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:text="Quit"
+        android:id="@+id/button_quit"
+        android:onClick="buttonOnClickExit"
+        android:layout_below="@+id/button_load"
+        android:layout_alignLeft="@+id/button_load"
+        android:layout_alignStart="@+id/button_load"
+        android:layout_marginTop="-5dp" />
+
+</RelativeLayout>

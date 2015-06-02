@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/charactercreator"
+    >
+
+    <Spinner
+        android:layout_width="115dp"
+        android:layout_height="30dp"
+        android:id="@+id/spinner_class"
+        android:layout_marginTop="41dp"
+        android:entries="@array/class_array"
+        android:prompt="@string/class_prompt"
+        android:layout_marginLeft="49dp"
+        android:layout_marginStart="49dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="115dp"
+        android:layout_height="30dp"
+        android:id="@+id/spinner_race"
+        android:layout_marginTop="24dp"
+        android:entries="@array/race_array"
+        android:prompt="@string/race_prompt"
+        android:layout_below="@+id/spinner_class"
+        android:layout_alignLeft="@+id/spinner_class"
+        android:layout_alignStart="@+id/spinner_class" />
+
+    <TextView
+        android:layout_width="115dp"
+        android:layout_height="30dp"
+        android:id="@+id/spinner_sex"
+        android:layout_marginTop="28dp"
+        android:entries="@array/class_array"
+        android:prompt="@string/class_prompt"
+        android:text="male"
+        android:gravity="center"
+        android:layout_below="@+id/spinner_race"
+        android:layout_alignLeft="@+id/spinner_race"
+        android:layout_alignStart="@+id/spinner_race" />
+
+    <TextView
+        android:layout_width="115dp"
+        android:layout_height="30dp"
+        android:id="@+id/textview_origin"
+        android:entries="@array/class_array"
+        android:prompt="@string/class_prompt"
+        android:text="arthago"
+        android:gravity="center"
+        android:layout_above="@+id/button_back"
+        android:layout_alignLeft="@+id/spinner_sex"
+        android:layout_alignStart="@+id/spinner_sex"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/button_back"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textview_origin"
+        android:layout_alignEnd="@+id/textview_origin"
+        android:layout_alignLeft="@+id/textview_origin"
+        android:layout_alignStart="@+id/textview_origin" />
+
+    <TextView
+        android:layout_width="115dp"
+        android:layout_height="30dp"
+        android:id="@+id/textview_str"
+        android:entries="@array/class_array"
+        android:prompt="@string/class_prompt"
+        android:layout_marginRight="36dp"
+        android:layout_alignTop="@+id/spinner_class"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="5"
+        android:gravity="center"
+        android:layout_marginTop="3dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create"
+        android:id="@+id/button_create"
+        android:padding="0dp"
+        android:layout_alignTop="@+id/button_back"
+        android:layout_alignLeft="@+id/textview_str"
+        android:layout_alignStart="@+id/textview_str"
+        android:layout_alignRight="@+id/textview_str"
+        android:layout_alignEnd="@+id/textview_str" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:id="@+id/textView_agility"
+        android:layout_alignTop="@+id/spinner_race"
+        android:layout_alignLeft="@+id/textview_str"
+        android:layout_alignStart="@+id/textview_str"
+        android:layout_above="@+id/spinner_sex"
+        android:layout_alignRight="@+id/textview_str"
+        android:layout_alignEnd="@+id/textview_str"
+        android:gravity="center"
+        android:layout_marginTop="2dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:id="@+id/textView2"
+        android:layout_alignTop="@+id/spinner_sex"
+        android:layout_alignRight="@+id/textView_agility"
+        android:layout_alignEnd="@+id/textView_agility"
+        android:layout_alignLeft="@+id/textView_agility"
+        android:layout_alignStart="@+id/textView_agility"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/imageView_create"
+        android:layout_marginTop="-2dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:autoText="false"
+        android:layout_alignBottom="@+id/textview_origin"
+        android:layout_alignLeft="@+id/button_create"
+        android:layout_alignStart="@+id/button_create"
+        android:layout_alignRight="@+id/button_create"
+        android:layout_alignEnd="@+id/button_create"
+        android:layout_alignTop="@+id/textview_origin"
+        android:text="5"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Name"
+        android:id="@+id/textView_name"
+        android:layout_alignTop="@+id/button_back"
+        android:layout_toLeftOf="@+id/button_create"
+        android:layout_toRightOf="@+id/button_back"
+        android:layout_toEndOf="@+id/button_back"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView_create"
+        android:layout_alignTop="@+id/spinner_race"
+        android:layout_alignBottom="@+id/spinner_sex"
+        android:layout_alignRight="@+id/textView_name"
+        android:layout_alignEnd="@+id/textView_name"
+        android:layout_alignLeft="@+id/textView_name"
+        android:layout_alignStart="@+id/textView_name"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp" />
+
+</RelativeLayout>

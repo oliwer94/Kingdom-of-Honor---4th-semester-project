@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                tools:context=".MainActivity"
+
+    android:background="@drawable/townmenu"
+    android:paddingLeft="-10dp"
+    android:paddingRight="-10dp"
+    >
+
+
+    <Button
+        android:layout_width="109dp"
+        android:layout_height="45dp"
+        android:text="Quest"
+        android:id="@+id/button_quest"
+        android:onClick="buttonOnClickMenu"
+        android:paddingLeft="-10dp"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="58dp" />
+
+    <Button
+        android:layout_width="109dp"
+        android:layout_height="45dp"
+        android:text="Shop"
+        android:id="@+id/button_shop"
+        android:onClick="buttonOnClickMenu"
+        android:paddingLeft="-10dp"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="109dp"
+        android:layout_height="45dp"
+        android:text="Craft"
+        android:id="@+id/button_craft"
+        android:onClick="buttonOnClickMenu"
+        android:paddingLeft="-10dp"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/button_shop"
+        android:layout_alignLeft="@+id/button_shop"
+        android:layout_alignStart="@+id/button_shop" />
+
+    <Button
+        android:layout_width="115dp"
+        android:layout_height="45dp"
+        android:text="Stats"
+        android:id="@+id/button_stats"
+        android:onClick="buttonOnClickMenu"
+        android:paddingLeft="-10dp"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignTop="@+id/button_quest"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="115dp"
+        android:layout_height="45dp"
+        android:text="Inventory"
+        android:id="@+id/button_inven"
+        android:onClick="buttonOnClickMenu"
+        android:paddingLeft="-10dp"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="115dp"
+        android:layout_height="45dp"
+        android:text="Map"
+        android:id="@+id/button_map"
+        android:onClick="buttonOnClickMenu"
+        android:paddingLeft="-10dp"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignBottom="@+id/button_craft"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:text=" "
+        android:id="@+id/button_setings"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="109dp"
+        android:layout_height="45dp"
+        android:text="BACK"
+        android:id="@+id/button4_back"
+        android:onClick="buttonOnClickMenu"
+        android:paddingLeft="-10dp"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

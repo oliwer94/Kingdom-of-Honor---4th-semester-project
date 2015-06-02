@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/charactercreator_without_labels"
+
+   >
+
+    <Spinner
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_class"
+        android:layout_marginTop="75dp"
+        android:entries="@array/class_array"
+        android:prompt="@string/class_prompt"
+        android:layout_marginLeft="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:background="@drawable/rounded_label" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_race"
+        android:layout_marginTop="45dp"
+        android:entries="@array/race_array"
+        android:prompt="@string/race_prompt"
+        android:layout_below="@+id/textview_str"
+        android:layout_alignLeft="@+id/spinner_class"
+        android:layout_alignStart="@+id/spinner_class"
+        android:layout_alignRight="@+id/spinner_class"
+        android:layout_alignEnd="@+id/spinner_class"
+        android:gravity="center"
+        android:background="@drawable/rounded_label" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_sex"
+        android:entries="@array/sex_array"
+        android:prompt="@string/sex_prompt"
+        android:layout_below="@+id/spinner_race"
+        android:layout_alignLeft="@+id/spinner_race"
+        android:layout_alignStart="@+id/spinner_race"
+        android:layout_marginTop="50dp"
+        android:layout_alignRight="@+id/spinner_race"
+        android:layout_alignEnd="@+id/spinner_race"
+        android:background="@drawable/rounded_label" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview_origin"
+        android:text="karthago"
+        android:gravity="center"
+        android:layout_below="@+id/imageView_create"
+        android:layout_alignLeft="@+id/spinner_sex"
+        android:layout_alignStart="@+id/spinner_sex"
+        android:layout_marginTop="50dp"
+        android:enabled="true"
+        android:editable="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_alignRight="@+id/spinner_sex"
+        android:layout_alignEnd="@+id/spinner_sex"
+        android:background="@drawable/rounded_label" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_back"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:onClick="buttonOnClickBackToMain"
+        android:background="@drawable/back_button"
+        android:layout_alignRight="@+id/spinner_sex"
+        android:layout_alignEnd="@+id/textview_origin" />
+
+    <TextView
+        android:layout_width="283dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview_str"
+        android:layout_marginRight="37dp"
+        android:text="5"
+        android:gravity="center"
+        android:layout_alignTop="@+id/spinner_class"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="117dp"
+        android:background="@drawable/standard_label"
+        android:layout_alignBottom="@+id/spinner_class" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_create"
+        android:padding="0dp"
+        android:layout_alignTop="@+id/button_back"
+        android:layout_alignLeft="@+id/textview_str"
+        android:layout_alignStart="@+id/textview_str"
+        android:onClick="buttonOnClickCreateandLoad"
+        android:background="@drawable/create_button"
+        android:layout_alignBottom="@+id/textView_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:id="@+id/textView_agility"
+        android:layout_alignTop="@+id/spinner_race"
+        android:layout_alignLeft="@+id/textview_str"
+        android:layout_alignStart="@+id/textview_str"
+        android:layout_above="@+id/spinner_sex"
+        android:gravity="center"
+        android:layout_marginTop="2dp"
+        android:layout_alignRight="@+id/textView_stamina"
+        android:layout_alignEnd="@+id/textView_stamina"
+        android:background="@drawable/standard_label" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:id="@+id/textView_int"
+        android:layout_alignTop="@+id/spinner_sex"
+        android:layout_alignLeft="@+id/textView_agility"
+        android:layout_alignStart="@+id/textView_agility"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/imageView_create"
+        android:layout_marginTop="-2dp"
+        android:layout_alignRight="@+id/textView_stamina"
+        android:layout_alignEnd="@+id/textView_stamina"
+        android:background="@drawable/standard_label" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_stamina"
+        android:autoText="false"
+        android:layout_alignBottom="@+id/textview_origin"
+        android:layout_alignLeft="@+id/button_create"
+        android:layout_alignStart="@+id/button_create"
+        android:layout_alignRight="@+id/button_create"
+        android:layout_alignEnd="@+id/button_create"
+        android:layout_alignTop="@+id/textview_origin"
+        android:text="5"
+        android:gravity="center"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/standard_label" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Name"
+        android:id="@+id/textView_name"
+        android:layout_alignTop="@+id/button_back"
+        android:layout_toLeftOf="@+id/button_create"
+        android:layout_toRightOf="@+id/button_back"
+        android:layout_toEndOf="@+id/button_back"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:enabled="true"
+        android:editable="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/rounded_layer_large" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView_create"
+        android:layout_alignBottom="@+id/spinner_sex"
+        android:layout_alignRight="@+id/textView_name"
+        android:layout_alignEnd="@+id/textView_name"
+        android:layout_alignLeft="@+id/textView_name"
+        android:layout_alignStart="@+id/textView_name"
+        android:background="@drawable/char_1"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_below="@+id/spinner_class" />
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/questhistory">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/back_button"
+        android:onClick="buttonOnClickQuests" />
+
+    <GridView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="136dp"
+        android:layout_marginStart="136dp"
+        android:layout_above="@+id/button3"
+        android:layout_marginRight="500dp"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp" />
+
+    <GridView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridView4"
+        android:layout_alignTop="@+id/gridView3"
+        android:layout_toRightOf="@+id/button3"
+        android:layout_toEndOf="@+id/button3"
+        android:layout_marginLeft="240dp"
+        android:layout_marginStart="279dp"
+        android:layout_marginRight="100dp"
+        android:layout_alignBottom="@+id/gridView3" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView_Scroll_history"
+        android:layout_alignTop="@+id/gridView3"
+        android:layout_alignBottom="@+id/gridView3"
+        android:layout_alignRight="@+id/gridView3"
+        android:layout_alignEnd="@+id/gridView3"
+        android:layout_alignLeft="@+id/gridView3"
+        android:layout_alignStart="@+id/gridView3"
+        android:background="@drawable/scrollfixfitmenu"
+        android:layout_marginLeft="180dp"
+        android:layout_marginRight="-180dp"
+        android:clickable="true"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_completed"
+        android:layout_alignBottom="@+id/gridView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/completedquests"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_history"
+        android:layout_alignTop="@+id/gridView3"
+        android:layout_marginTop="43dp"
+        android:layout_above="@+id/button_completed"
+        android:layout_alignLeft="@+id/button_completed"
+        android:layout_alignStart="@+id/button_completed"
+        android:layout_alignRight="@+id/button_completed"
+        android:layout_alignEnd="@+id/button_completed"
+        android:visibility="invisible" />
+
+</RelativeLayout>

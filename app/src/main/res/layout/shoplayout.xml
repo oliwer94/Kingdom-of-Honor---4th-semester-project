@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/shop_1024x60">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_buy_shopmain"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/buy_button"
+        android:layout_above="@+id/button_sell_shopmain"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="49dp"
+        android:onClick="buttonOnClickBuyView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_sell_shopmain"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/button_buy_shopmain"
+        android:layout_alignStart="@+id/button_buy_shopmain"
+        android:background="@drawable/sell_button"
+        android:onClick="buttonOnClickSellView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_back_shopmain"
+        android:layout_marginTop="49dp"
+        android:background="@drawable/back_button"
+        android:layout_below="@+id/button_sell_shopmain"
+        android:layout_centerHorizontal="true"
+        android:onClick="buttonOnClickBackToTown" />
+</RelativeLayout>
